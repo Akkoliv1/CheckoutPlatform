@@ -26,7 +26,6 @@ namespace PromotionEngine.BusinessLayer
         {
             consoleLayer = new ConsoleLayer();
             promotionService = new PromotionService();
-
         }
 
         public bool CheckoutProducts()
@@ -80,7 +79,6 @@ namespace PromotionEngine.BusinessLayer
             {
                 configManagement = new ConfigRepository();
                 return configManagement.GetProductOffers();
-
             }
             catch (Exception ex)
             {

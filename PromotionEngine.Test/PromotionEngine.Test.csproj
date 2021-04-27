@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="AdditionalItemOfferTest.cs" />
     <Compile Include="ComboOfferTest.cs" />
-    <Compile Include="Scenarios.cs" />
+    <Compile Include="PromotionServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

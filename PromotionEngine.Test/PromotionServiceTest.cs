@@ -6,7 +6,7 @@ using PromotionEngine.Service;
 
 namespace PromotionEngine.Test
 {
-    public class Scenarios
+    public class PromotionServiceTest
     {
         List<Promotion> _promotions;
 
@@ -26,7 +26,7 @@ namespace PromotionEngine.Test
         /// 1* C =20
         /// </summary>
         [Test]
-        public void Scenario1()
+        public void Scenario1_NoOffer()
         {
             List<ProductCheckout> orderCart = new List<ProductCheckout>() { new ProductCheckout() { ProductCode = "A", Quantity = 1, DefaultPrice = 50 }, new ProductCheckout() { ProductCode = "B", Quantity = 1, DefaultPrice = 30 }, new ProductCheckout() { ProductCode = "C", Quantity = 1, DefaultPrice = 20 } };
             double expectedValue = 100;
@@ -42,7 +42,7 @@ namespace PromotionEngine.Test
         //Total = 370 
         /// </summary>
         [Test]
-        public void Scenario2()
+        public void Scenario2_TwoOffer_Single()
         {
             List<ProductCheckout> orderCart = new List<ProductCheckout>() { new ProductCheckout() { ProductCode = "A", Quantity = 5, DefaultPrice = 50 }, new ProductCheckout() { ProductCode = "B", Quantity = 5, DefaultPrice = 30 }, new ProductCheckout() { ProductCode = "C", Quantity = 1, DefaultPrice = 20 } };
             double expectedValue = 370;
@@ -60,7 +60,7 @@ namespace PromotionEngine.Test
         /// 1* D =30
         /// </summary>
         [Test]
-        public void Scenario3()
+        public void Scenario3_TwoOffer_Combo()
         {
             List<ProductCheckout> orderCart = new List<ProductCheckout>() { new ProductCheckout() { ProductCode = "A", Quantity = 3, DefaultPrice = 50 }, new ProductCheckout() { ProductCode = "B", Quantity = 5, DefaultPrice = 30 }, new ProductCheckout() { ProductCode = "C", Quantity = 1, DefaultPrice = 20 }, new ProductCheckout() { ProductCode = "D", Quantity = 1, DefaultPrice = 15 } };
             double expectedValue = 280;

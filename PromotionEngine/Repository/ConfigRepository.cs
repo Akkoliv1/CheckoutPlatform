@@ -15,7 +15,8 @@ namespace PromotionEngine.Repository
         {
             try
             {
-                var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(Constants.DataStore, false);
+                var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile(Constants.DataStore, false);
 
                 configuration = builder.Build();
             }

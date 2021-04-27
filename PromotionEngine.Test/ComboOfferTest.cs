@@ -13,6 +13,7 @@ namespace PromotionEngine.Test
         IPromotionStrategy _promotionStrategy;
         List<ProductCheckout> _productWithOffer;
         List<ProductCheckout> _productWithoutOffer;
+
         [SetUp]
         public void Setup()
         {
