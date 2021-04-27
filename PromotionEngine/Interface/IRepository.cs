@@ -1,12 +1,11 @@
-﻿using System;
+﻿using PromotionEngine.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PromotionEngine.Interface
 {
     public interface IRepository
     {
+        List<Product> GetAvilableProducts();
+        List<Promotion> GetProductOffers();
     }
 }

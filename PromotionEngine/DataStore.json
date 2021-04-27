@@ -1,0 +1,52 @@
+{
+  "Promotions": [
+    {
+      "PromotionId": 1,
+      "Quantity": 3,
+      "Type": "Single",
+      "ProductCode": "A",
+      "Price": 130
+    },
+    {
+      "PromotionId": 2,
+      "Quantity": 2,
+      "Type": "Single",
+      "ProductCode": "B",
+      "Price": 45
+    },
+    {
+      "PromotionId": 3,
+      "Quantity": 2,
+      "Type": "Combo",
+      "ProductCode": "C;D",
+      "Price": 30
+    }
+
+  ],
+  "Products": [
+    {
+      "ProductId": 1,
+      "ProductCode": "A",
+      "ProductName": "A",
+      "Price": 50
+    },
+    {
+      "ProductId": 2,
+      "ProductCode": "B",
+      "ProductName": "B",
+      "Price": 30
+    },
+    {
+      "ProductId": 3,
+      "ProductCode": "C",
+      "ProductName": "C",
+      "Price": 20
+    },
+    {
+      "ProductId": 4,
+      "ProductCode": "D",
+      "ProductName": "D",
+      "Price": 15
+    }
+  ]
+}

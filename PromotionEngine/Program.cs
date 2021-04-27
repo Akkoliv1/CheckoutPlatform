@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PromotionEngine.BusinessLayer;
+using PromotionEngine.Infrastructure;
+using System;
 
 namespace PromotionEngine
 {
@@ -10,6 +8,25 @@ namespace PromotionEngine
     {
         static void Main(string[] args)
         {
+            try
+            {
+                LogWriter.LogWrite("Promotion Engine is initialized : ");
+
+                Facade facade = new Facade();
+
+
+                facade.CheckoutProducts();///User input for the Product quantity  
+
+                facade.ApplyPromotion();// Apply Promotion offers for the product
+
+                facade.DisplayTotalPrice(); //Display result 
+
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                LogWriter.LogWrite("Exception in Promotion Engine .... : " + ex.Message);
+            }
         }
     }
 }
