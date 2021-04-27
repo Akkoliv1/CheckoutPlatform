@@ -140,6 +140,8 @@
     <Compile Include="Interface\IRepository.cs" />
     <Compile Include="PresentationLayer\ConsoleLayer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PromotionStrategies\AdditionalItemOffer.cs" />
+    <Compile Include="PromotionStrategies\ComboOffer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ConfigRepository.cs" />
     <Compile Include="Service\PromotionService.cs" />
