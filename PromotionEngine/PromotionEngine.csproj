@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AppliedOffer.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\ProductCheckout.cs" />
+    <Compile Include="Entities\Promotion.cs" />
     <Compile Include="Interface\IPromotionInputOutput.cs" />
     <Compile Include="Interface\IPromotionService.cs" />
     <Compile Include="Interface\IPromotionStrategy.cs" />
