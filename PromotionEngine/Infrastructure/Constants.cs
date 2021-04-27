@@ -13,6 +13,11 @@ namespace PromotionEngine.Infrastructure
 
         public const string Products = "Products";
         public const string Promotions = "Promotions";
+    }
 
+    public class PromotionTypeConstants
+    {
+        public const string Single = "Single";
+        public const string Combo = "Combo";
     }
 }
