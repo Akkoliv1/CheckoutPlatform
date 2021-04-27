@@ -138,6 +138,7 @@
     <Compile Include="Interface\IPromotionService.cs" />
     <Compile Include="Interface\IPromotionStrategy.cs" />
     <Compile Include="Interface\IRepository.cs" />
+    <Compile Include="PresentationLayer\ConsoleLayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ConfigRepository.cs" />
