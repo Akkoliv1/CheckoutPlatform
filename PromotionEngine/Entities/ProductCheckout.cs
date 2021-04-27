@@ -7,5 +7,6 @@
         public double FinalPrice { get; set; }
         public double DefaultPrice { get; set; }
         public bool HasOffer { get; set; }
+        public bool IsValidated { get; set; }
     }
 }

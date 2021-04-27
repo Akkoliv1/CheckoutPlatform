@@ -30,6 +30,7 @@ namespace PromotionEngine.PromotionStrategies
             appliedPromotion = promotions.Where(x => x.ProductCode == product.ProductCode).FirstOrDefault();
             if (appliedPromotion != null && appliedPromotion.Type == PromotionTypeConstants.Single)
             {
+                product.IsValidated = true;
                 return true;
             }
 

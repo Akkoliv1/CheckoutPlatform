@@ -25,7 +25,7 @@ namespace PromotionEngine.PromotionStrategies
         {
             recentProductCheckout = productCheckout;
             appliedPromotion = promotions.Where(x => x.ProductCode.Split(';').Contains(productCheckout.ProductCode)).FirstOrDefault();
-            if (appliedPromotion != null && appliedPromotion.Type == PromotionTypeConstants.Combo)
+            if (appliedPromotion != null && !productCheckout.IsValidated && appliedPromotion.Type == PromotionTypeConstants.Combo)
             {
                 return true;
             }
@@ -54,6 +54,7 @@ namespace PromotionEngine.PromotionStrategies
                     if (str.Contains(item.ProductCode))
                     {
                         productCheckouts.Add(item);
+                        item.IsValidated = true;
                     }
                 }
 
