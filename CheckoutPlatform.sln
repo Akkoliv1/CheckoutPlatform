@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionEngine", "PromotionEngine\PromotionEngine.csproj", "{5D655155-EC04-44A2-97FD-AFA3B080A0EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionEngine.Test", "PromotionEngine.Test\PromotionEngine.Test.csproj", "{2D114E70-ABA0-4489-AF3B-A52D488961E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D655155-EC04-44A2-97FD-AFA3B080A0EA} = {5D655155-EC04-44A2-97FD-AFA3B080A0EA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
