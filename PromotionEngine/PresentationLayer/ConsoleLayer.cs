@@ -24,23 +24,43 @@ namespace PromotionEngine.PresentationLayer
         /// <returns></returns>
         public List<ProductCheckout> LoadUserInput()
         {
-
             List<ProductCheckout> checkoutList = new List<ProductCheckout>();
             List<Product> lstProduct = LoadAvilableProducts();
 
             Console.WriteLine("Enter User Inputs");
-            foreach (var item in lstProduct)
+            try
             {
-                Console.WriteLine("Input quantity of " + item.ProductCode);
-                int quantity = Convert.ToInt32(Console.ReadLine());
-
-                checkoutList.Add(new ProductCheckout()
+               
+                foreach (var item in lstProduct)
                 {
-                    ProductCode = item.ProductCode,
-                    Quantity = quantity,
-                    DefaultPrice = item.Price
-                });
+                    Console.WriteLine("Input quantity of " + item.ProductCode);
+                    int quantity = Convert.ToInt32(Console.ReadLine());
+
+                    checkoutList.Add(new ProductCheckout()
+                    {
+                        ProductCode = item.ProductCode,
+                        Quantity = quantity,
+                        DefaultPrice = item.Price
+                    });
+                }
+
             }
+            catch (FormatException ex)
+            {
+
+                Console.WriteLine("Error in User Entry: " + ex.Message);
+            }
+            catch (OverflowException ex)
+            {
+
+                Console.WriteLine("Error in User Entry: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error in User Entry: "+ ex.Message);
+            }
+           
 
             return checkoutList;
         }

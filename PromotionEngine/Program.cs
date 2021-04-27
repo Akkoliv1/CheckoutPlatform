@@ -11,6 +11,7 @@ namespace PromotionEngine
             try
             {
                 LogWriter.LogWrite("Promotion Engine is initialized : ");
+
                 Facade facade = new Facade();
 
 
