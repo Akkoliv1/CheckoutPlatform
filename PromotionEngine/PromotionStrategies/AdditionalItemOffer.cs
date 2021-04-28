@@ -19,7 +19,7 @@ namespace PromotionEngine.PromotionStrategies
         }
 
         /// <summary>
-        /// 
+        /// Can Execute
         /// </summary>
         /// <param name="product"></param>
         /// <param name="promotions"></param>
@@ -38,7 +38,7 @@ namespace PromotionEngine.PromotionStrategies
         }
 
         /// <summary>
-        /// 
+        /// Calculate ProductPrice
         /// </summary>
         /// <param name="productCheckoutList"></param>
         /// <returns></returns>

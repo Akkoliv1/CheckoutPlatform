@@ -8,9 +8,14 @@ using System.IO;
 
 namespace PromotionEngine.Repository
 {
+    /// <summary>
+    /// Config Repository
+    /// </summary>
     public class ConfigRepository : IRepository
     {
         IConfiguration configuration;
+
+
         public ConfigRepository()
         {
             try
@@ -33,7 +38,7 @@ namespace PromotionEngine.Repository
         }
 
         /// <summary>
-        /// 
+        /// Get AvilableProducts
         /// </summary>
         /// <returns></returns>
         public List<Product> GetAvilableProducts()
@@ -51,7 +56,7 @@ namespace PromotionEngine.Repository
         }
 
         /// <summary>
-        /// 
+        /// Get ProductOffers
         /// </summary>
         /// <returns></returns>
         public List<Promotion> GetProductOffers()

@@ -9,17 +9,23 @@ using System.Threading.Tasks;
 
 namespace PromotionEngine.PresentationLayer
 {
+    /// <summary>
+    /// ConsoleLayer
+    /// </summary>
    public class ConsoleLayer: IPromotionInputOutput
     {
         ConfigRepository configManagement;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public ConsoleLayer()
         {
             configManagement = new ConfigRepository();
         }
 
         /// <summary>
-        /// 
+        /// Load UserInput
         /// </summary>
         /// <returns></returns>
         public List<ProductCheckout> LoadUserInput()
@@ -66,7 +72,7 @@ namespace PromotionEngine.PresentationLayer
         }
 
         /// <summary>
-        /// 
+        /// Load AvilableProducts
         /// </summary>
         /// <returns></returns>
         private List<Product> LoadAvilableProducts()

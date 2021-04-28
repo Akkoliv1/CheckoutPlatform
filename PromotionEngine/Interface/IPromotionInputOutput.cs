@@ -1,21 +1,21 @@
 ﻿using PromotionEngine.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PromotionEngine.Interface
 {
+    /// <summary>
+    /// Interface to access various functionalities for presentation .
+    /// </summary>
     public interface IPromotionInputOutput
     {
         /// <summary>
-        /// 
+        /// Load UserInput
         /// </summary>
         /// <returns></returns>
         List<ProductCheckout> LoadUserInput();
+
         /// <summary>
-        /// 
+        /// Display TotalPrice
         /// </summary>
         /// <param name="appliedOffer"></param>
         /// <returns></returns>
